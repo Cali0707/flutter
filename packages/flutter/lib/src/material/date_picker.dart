@@ -139,6 +139,8 @@ Future<DateTime?> showDatePicker({
   required DateTime initialDate,
   required DateTime firstDate,
   required DateTime lastDate,
+  String function(Date date) formatDate,
+  Date function(String dateString) parseDate,
   DateTime? currentDate,
   DatePickerEntryMode initialEntryMode = DatePickerEntryMode.calendar,
   SelectableDayPredicate? selectableDayPredicate,
